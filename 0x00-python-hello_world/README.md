@@ -25,3 +25,9 @@ The Python code will be saved in the environment variable $PYCODE
 	- GitHub repository: alx-higher_level_programming
 	- Directory: 0x00-python-hello_world
 	- File: 1-run_inline
+
+## 2. Hello, print 
+
+Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+
+	- Use the function **print**
