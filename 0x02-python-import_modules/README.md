@@ -35,4 +35,6 @@ man or help:
 
 **1. My first toolbox!**
 
-2. How to make a script dynamic! 
+**2. How to make a script dynamic!**
+
+**5. Everything can be imported**
