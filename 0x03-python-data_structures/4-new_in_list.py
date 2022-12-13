@@ -3,7 +3,7 @@
 def new_in_list(my_list, idx, element):
     """
     A function that replaces an element
-    in a list at a specific position 
+    in a list at a specific position
     without modifying the original list
     """
     if idx < 0:
