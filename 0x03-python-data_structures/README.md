@@ -53,3 +53,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 **0. Print a list of integers**
 
+**1. Secure access to an element in a list**
+
