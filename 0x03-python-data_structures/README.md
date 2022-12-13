@@ -60,3 +60,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **3. Print a list of integers... in reverse!**
 
 **4. Replace in a copy**
+
+**5. Can you C me now?**
