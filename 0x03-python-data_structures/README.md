@@ -64,3 +64,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **5. Can you C me now?**
 
 **6. Lists of lists = Matrix**
+
+**7. Tuples addition**
