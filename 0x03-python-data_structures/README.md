@@ -70,3 +70,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **8. More returns!**
 
 **9. Find the max**
+
+**10. Only by 2**
