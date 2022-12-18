@@ -12,7 +12,7 @@ def divisible_by_2(my_list=[]):
     div_list = []
     for ele in my_list:
         if ele % 2 == 0:
-           div_list.append(True)
+            div_list.append(True)
         else:
-           div_list.append(False)
+            div_list.append(False)
     return div_list
