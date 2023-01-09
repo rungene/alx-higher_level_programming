@@ -56,3 +56,5 @@ man or help:
 **9. Multiply by 2**
 
 **10. Best score**
+
+**11. Multiply by using map**
