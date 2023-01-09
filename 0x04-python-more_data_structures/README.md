@@ -58,3 +58,5 @@ man or help:
 **10. Best score**
 
 **11. Multiply by using map**
+
+**12. Roman to Integer**
