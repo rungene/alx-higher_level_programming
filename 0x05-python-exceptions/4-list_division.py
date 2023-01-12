@@ -6,14 +6,19 @@ def list_division(my_list_1, my_list_2, list_length):
     If 2 elements can’t be divided, the division result should be equal to 0
     """
     new_list = []
-    try:
-        new_list = [my_list_1 / my_list_2
-                    for my_list_1, my_list_2 in zip(my_list_1, my_list_2)]
-    except ValueError:
-        print("wrong type")
-    except ZeroDivisionError:
-        print("division by 0")
-    except IndexError:
-        print("out of range")
-    finally:
-        return new_list
+    result = 0
+    for i in range(list_length):
+        try:
+            result = (my_list_1[i]/my_list_2[i])
+        except TypeError:
+            result = 0
+            print("wrong type")
+        except ZeroDivisionError:
+            result = 0
+            print("division by 0")
+        except IndexError:
+            result = 0
+            print("out of range")
+        finally:
+            new_list.append(result)
+    return new_list
