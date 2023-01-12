@@ -44,3 +44,5 @@ man or help:
 **4. Divide a list**
 
 **5. Raise exception**
+
+**6. Raise a message**
