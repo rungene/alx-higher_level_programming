@@ -18,6 +18,4 @@ class Square:
         Args:
             size:private instance size of a square.
         """
-        self.is_new = True
-        if size is not None:
-            self.__size = size
+        self.__size = size
