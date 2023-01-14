@@ -55,3 +55,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **1. Square with size**
 
 **2. Size validation**
+
+**3. Area of a square**
