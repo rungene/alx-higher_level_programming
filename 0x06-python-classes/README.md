@@ -52,3 +52,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 **0. My first square**
 
+**1. Square with size**
