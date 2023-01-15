@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-This module demonstrates an empty class Square that defines a square:
-without  import any module
+This module demonstrates how to calculate Area of a square 
 """
 
 
