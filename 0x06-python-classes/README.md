@@ -61,3 +61,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **4. Access and update private attribute**
 
 **5. Printing a square**
+
+**6. Coordinates of a square**
