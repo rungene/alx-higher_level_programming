@@ -58,3 +58,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 	Write the name of the function in the file, without ().
 
 **2. Right count**
+
+**3. Right count = **
