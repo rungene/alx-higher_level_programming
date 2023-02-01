@@ -92,3 +92,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **18. List assignation**
 
 **19. Copy a list object**
+	
+	Write a function def copy_list(l): that returns a copy of a list
