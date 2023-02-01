@@ -90,3 +90,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **17. List incrementation**
 
 **18. List assignation**
+
+**19. Copy a list object**
