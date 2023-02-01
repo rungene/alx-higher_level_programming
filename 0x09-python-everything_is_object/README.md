@@ -108,3 +108,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **26. Empty is not empty**
 
 **27. Still the same?**
+
+**28. Same or not?**
