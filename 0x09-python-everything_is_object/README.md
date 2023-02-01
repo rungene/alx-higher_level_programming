@@ -104,3 +104,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **23. Tuple or not?**
 
 **25. Tuple or not**
+
+**26. Empty is not empty**
