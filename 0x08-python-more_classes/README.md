@@ -75,3 +75,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **5. Detect instance deletion**
 	
 	Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
+
+**6. How many instances**
+
+	Write a class Rectangle that defines a rectangle by: (based on 5-rectangle.py)
