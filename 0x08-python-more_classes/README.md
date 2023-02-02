@@ -63,3 +63,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **2. Area and Perimeter**
 
 	Write a class Rectangle that defines a rectangle by: (based on 1-rectangle.py)
+
+**3. String representation**
+	
+	Write a class Rectangle that defines a rectangle by: (based on 2-rectangle.py)
