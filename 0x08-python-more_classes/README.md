@@ -79,3 +79,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **6. How many instances**
 
 	Write a class Rectangle that defines a rectangle by: (based on 5-rectangle.py)
+
+**7. Change representation**
+	
+	Write a class Rectangle that defines a rectangle by: (based on 6-rectangle.py)
