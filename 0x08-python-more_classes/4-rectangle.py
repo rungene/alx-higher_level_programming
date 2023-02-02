@@ -129,5 +129,5 @@ class Rectangle:
             Should return a string representation of the rectangle
              to recreate a new instance by using eval()
         """
-        return "Rectangle(" + str(self.__height) + "," + str(self.__width) +
+        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) +\
         ")"
