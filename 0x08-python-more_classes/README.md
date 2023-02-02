@@ -59,3 +59,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **1. Real definition of a rectangle**
 
 	Write a class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+
+**2. Area and Perimeter**
+
+	Write a class Rectangle that defines a rectangle by: (based on 1-rectangle.py)
