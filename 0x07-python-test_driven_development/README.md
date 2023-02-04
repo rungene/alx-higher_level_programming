@@ -40,3 +40,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 **0. Integers addition**
 
 	Write a function that adds 2 integers.
+
+**1. Divide a matrix**
+
+	Write a function that divides all elements of a matrix.
