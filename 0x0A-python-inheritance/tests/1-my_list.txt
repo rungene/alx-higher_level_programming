@@ -11,11 +11,11 @@
 True
 
 'class should have a documentation'
->>> doc_c = __import__("1-my_list").MyList__doc__
->>> len(doc_c) > 1
+>>> cls = __import__("1-my_list").MyList.__doc__
+>>> len(cls) > 1
 True
 
 'methods should have a documentation'
->>> doc_m = __import__("1-my_list").MyList.print_sorted__doc__
->>> len(doc_m) > 1
+>>> mthd = __import__("1-my_list").MyList.print_sorted.__doc__
+>>> len(mthd) > 1
 True
