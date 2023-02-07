@@ -95,3 +95,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 	
 	- Prototype: def is_same_class(obj, a_class):
 	- You are not allowed to import any module
+
+**3. Same class or inherit from**
+
+	- Prototype: def is_kind_of_class(obj, a_class):
+	- You are not allowed to import any module
