@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Created on Tuesday 7.02.2023
+@author: Rungene
+"""
+
 
 def is_same_class(obj, a_class):
     """
