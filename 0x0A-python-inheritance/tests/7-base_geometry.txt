@@ -1,0 +1,21 @@
+========================================================================
+'Test for 7-base_geometry module'
+========================================================================
+'Funtion to test: integer_validator(self, name, value) inside BaseGeometry class'
+========================================================================
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+'modules should have a documentation'
+>>> doc = __import__("7-base_geometry").__doc__
+>>> len(doc) > 1
+True
+
+'class should have a documentation'
+>>> cls = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(cls) > 1
+True
+
+'methods should have a documentation'
+>>> mthd = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+>>> len(mthd) > 1
+True
