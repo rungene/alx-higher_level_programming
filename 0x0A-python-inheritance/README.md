@@ -100,3 +100,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 	- Prototype: def is\_kind\_of\_class(obj, a\_class):
 	- You are not allowed to import any module
+
+**5. Geometry module**
+	
+	Write an empty class BaseGeometry.
+
+	- You are not allowed to import any module
