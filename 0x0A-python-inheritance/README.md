@@ -85,7 +85,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 	Write a class MyList that inherits from list:
 
-	- Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
+	- Public instance method: def print\_sorted(self): that prints the list, but sorted (ascending sort)
 	- You can assume that all the elements of the list will be of type int
 	- You are not allowed to import any module
 
@@ -93,10 +93,10 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 	Write a function that returns True if the object is exactly an instance of the specified class ; otherwise False
 	
-	- Prototype: def is_same_class(obj, a_class):
+	- Prototype: def is\_same\_class(obj, a\_class):
 	- You are not allowed to import any module
 
 **3. Same class or inherit from**
 
-	- Prototype: def is_kind_of_class(obj, a_class):
+	- Prototype: def is\_kind\_of\_class(obj, a\_class):
 	- You are not allowed to import any module
