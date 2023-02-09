@@ -3,6 +3,8 @@
 Created on Tuesday 7.02.2023
 @author: Rungene
 """
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
