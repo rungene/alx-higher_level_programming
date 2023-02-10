@@ -14,7 +14,7 @@ file_name = 'add_item.json'
 
 try:
     list_add = load_from_json_file(file_name)
-except:
+except Exception:
     list_add = []
 
 for i in range(1, len(args)):
@@ -22,5 +22,5 @@ for i in range(1, len(args)):
 
 try:
     save_to_json_file(list_add, file_name)
-except:
+except Exception:
     pass
