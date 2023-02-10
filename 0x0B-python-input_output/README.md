@@ -108,3 +108,10 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 	
 	- Prototype: def to\_json\_string(my\_obj):
 	- You don’t need to manage exceptions if the object can’t be serialized.
+
+**4. From JSON string to Object**
+
+	Write a function that returns an object (Python data structure) represented by a JSON string:
+
+	- Prototype: def from\_json\_string(my\_str):
+	- You don’t need to manage exceptions if the JSON string doesn’t represent an object.
