@@ -124,3 +124,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 	- You must use the with statement
 	- You don’t need to manage exceptions if the object can’t be serialized.
 	- You don’t need to manage file permission exceptions.
+
+**6. Create object from a JSON file**
+
+	Write a function that creates an Object from a “JSON file”:
+
+	- Prototype: def load_from_json_file(filename):
+	- You must use the with statement
+	- You don’t need to manage exceptions if the JSON string doesn’t represent an object.
+	- You don’t need to manage file permissions / exceptions.
