@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
 """
 Created on Friday 10.02.2023
 @author: Rungene
 """
+import json
 
 
 def to_json_string(my_obj):
