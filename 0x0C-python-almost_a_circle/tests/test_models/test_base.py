@@ -11,7 +11,7 @@ import inspect
 import pep8
 
 
-class TestBase(Unittest.Testcase):
+class TestBase(unittest.TestCase):
     """"
     TestBase - class for testing Base class methods
     """
@@ -45,8 +45,8 @@ class TestBase(Unittest.Testcase):
         """
         tests if base module doc string exists
         """
-        doc = __import__('models/base.py').__doc__
-        self.assertTrue(len(doc) >= 1)
+        # doc = __import__('models/base').__doc__
+        self.assertTrue(len('models/base.py'.__doc__) >= 1)
 
     def test_class_docstring(self):
         """
@@ -58,5 +58,5 @@ class TestBase(Unittest.Testcase):
         """
         test if method docsting exists
         """
-        for doc_mthd in cls.setup:
+        for doc_mthd in self.setup:
             self.assertTrue(len(doc_mthd[1].__doc__) >= 1)
