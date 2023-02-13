@@ -61,7 +61,7 @@ class TestRec(unittest.TestCase):
         for doc_mthds in self.setup:
             self.assertTrue(len(doc_mthds[1].__doc__) >= 1)
 
-    def test_Normal_values(self):
+    def test_expected_values(self):
         """
         Testing expected Normal values just for width and height
         x, y and id
@@ -78,3 +78,18 @@ class TestRec(unittest.TestCase):
                          [1, 2, 3, 4, 3])
         self.assertEqual([R3.width, R3.height, R3.x, R3.y, R3.id],
                          [1, 2, 3, 4, 5])
+
+    def test_wrong_input_vals(self):
+        """
+        Testing for zero and negative values
+        """
+        with self.assertRaises(ValueError):
+            R = Rectangle(0, 0)
+        with self.assertRaises(ValueError):
+            R = Rectangle(-1, -1)
+        with self.assertRaises(ValueError):
+            R = Rectangle(1, 1, -1, -1)
+        with self.assertRaises(TypeError):
+            R = Rectangle()
+        with self.assertRaises(TypeError):
+            R = Rectangle(1, 2, 3, 4, 5, 6, 7)
