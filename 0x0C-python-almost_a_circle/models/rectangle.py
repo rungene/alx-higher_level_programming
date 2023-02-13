@@ -25,12 +25,21 @@ class Rectangle(Base):
             - __y -> y private attribute for y value of rectangle
             -id (int) attribute id inherits from the base class
         """
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)
 
+    def area(self):
+        """
+        public method for calculating the area of rectangle
+
+        Return:
+            Area of rectangle
+        """
+        return self.width * self.height
+    
     @property
     def width(self):
         """
@@ -129,12 +138,3 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
-
-    def area(self):
-        """
-        public method for calculating the area of rectangle
-
-        Return:
-            Area of rectangle
-        """
-        return self.width * self.height
