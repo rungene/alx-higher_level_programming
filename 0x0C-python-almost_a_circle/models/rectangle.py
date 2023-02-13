@@ -31,102 +31,102 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-        @property
-        def width(self):
-            """
-            propert method width
+    @property
+    def width(self):
+        """
+        propert method width
 
-            Returns:
-                private value of width
-            """
-            return self.__width
+        Returns:
+            private value of width
+        """
+        return self.__width
 
-        @width.setter
-        def width(self, value):
-            """
-            setter method for width value
+    @width.setter
+    def width(self, value):
+        """
+        setter method for width value
 
-            Attributes:
-                value-value to check if int />0
-            """
-            if type(value) is not int:
-                raise TypeError("width must be an integer")
-            elif value <= 0:
-                raise ValueError("width must be > 0")
-            else:
-                self.__width = value
+        Attributes:
+            value-value to check if int />0
+        """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        else:
+            self.__width = value
 
-        @property
-        def height(self):
-            """
-            property method for getting height
+    @property
+    def height(self):
+        """
+        property method for getting height
 
-            Return:
-                private value of height
-            """
-            return self.__height
+        Return:
+            private value of height
+        """
+        return self.__height
 
-        @height.setter
-        def height(self, value):
-            """
-            setter method for height value
+    @height.setter
+    def height(self, value):
+        """
+        setter method for height value
 
-            Attributes:
-                value - value to check if int and > 0
-            """
-            if type(value) is not int:
-                raise TypeError("height must be an integer")
-            elif value <= 0:
-                raise ValueError("height must be > 0")
-            else:
-                self.__height = value
+        Attributes:
+            value - value to check if int and > 0
+        """
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        elif value <= 0:
+            raise ValueError("height must be > 0")
+        else:
+            self.__height = value
 
-        @property
-        def x(self):
-            """
-            property method for getting x
+    @property
+    def x(self):
+        """
+        property method for getting x
 
-            Return:
-                private value of x
-            """
-            return self.__x
+        Return:
+            private value of x
+        """
+        return self.__x
 
-        @x.setter
-        def x(self, value):
-            """
-            setter method for x value
+    @x.setter
+    def x(self, value):
+        """
+        setter method for x value
 
-            Attributes:
-                value - value to check if int and > 0
-            """
-            if type(value) is not int:
-                raise TypeError("x must be an integer")
-            elif value <= 0:
-                raise ValueError("x must be > 0")
-            else:
-                self.__x = value
+        Attributes:
+            value - value to check if int and > 0
+        """
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        elif value <= 0:
+            raise ValueError("x must be > 0")
+        else:
+            self.__x = value
 
-        @property
-        def y(self):
-            """
-            property method for getting y
+    @property
+    def y(self):
+        """
+        property method for getting y
 
-            Return:
-                private vallue y
-            """
-            return self.__width
+        Return:
+            private vallue y
+        """
+        return self.__width
 
-        @y.setter
-        def y(self, value):
-            """
-            setter method for y value
+    @y.setter
+    def y(self, value):
+        """
+        setter method for y value
 
-            Attributes:
-                value - value to check if int and > 0
-            """
-            if type(value) is not int:
-                raise TypeError("y must be an integer")
-            elif value <= 0:
-                raise ValueError("y must be > 0")
-            else:
-                self.__y = value
+        Attributes:
+            value - value to check if int and > 0
+        """
+        if type(value) is not int:
+            raise TypeError("y must be an integer")
+        elif value <= 0:
+            raise ValueError("y must be > 0")
+        else:
+            self.__y = value
