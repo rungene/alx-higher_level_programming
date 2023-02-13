@@ -113,7 +113,7 @@ class Rectangle(Base):
         Return:
             private vallue y
         """
-        return self.__width
+        return self.__y
 
     @y.setter
     def y(self, value):
