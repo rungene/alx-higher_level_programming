@@ -22,8 +22,8 @@ class Base:
         Attributes:
             id integer input for for id
         """
-        if id not None:
-            self.id = id
-        else:
+        if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+        else:
+            self.id = id
