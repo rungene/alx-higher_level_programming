@@ -10,6 +10,7 @@ from models.base import Base
 import inspect
 import pep8
 
+
 class TestBase(Unittest.Testcase):
     """"
     TestBase - class for testing Base class methods
@@ -28,23 +29,24 @@ class TestBase(Unittest.Testcase):
         pep8_code_style = pep8.StyleGuide(quiet=True)
         result = pep8_code_style.check_files(['models/base.py'])
         self.assertEqual(result.total_errors, 0,
-                        "Found code style errors (and warnings).")
-    
+                         "Found code style errors (and warnings).")
+
     def test_classbasetest_conform_pep8(self):
         """
         Test tes_base.py conforms to PEP8
         """
         pep8_code_style = pep8.StyleGuide(quiet=True)
-        result = pep8_code_style.check_files(['tests/test_models/test_base.py'])
+        result = pep8_code_style.check_files(
+                 ['tests/test_models/test_base.py'])
         self.assertEqual(result.total_errors, 0,
-                        "Found code style errors (and warnings).")
+                         "Found code style errors (and warnings).")
 
     def test_basemodule_docstring(self):
         """
         tests if base module doc string exists
         """
         doc = __import__('models/base.py').__doc__
-         self.assertTrue(len(doc) >= 1)
+        self.assertTrue(len(doc) >= 1)
 
     def test_class_docstring(self):
         """
@@ -58,13 +60,3 @@ class TestBase(Unittest.Testcase):
         """
         for doc_mthd in cls.setup:
             self.assertTrue(len(doc_mthd[1].__doc__) >= 1)
-
-
-
-
-
-
-
-
-
-
