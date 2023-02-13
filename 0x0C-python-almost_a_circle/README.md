@@ -79,3 +79,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your tests should be executed by using this command: python3 -m unittest discover tests
 - You can also test file by file by using this command: python3 -m unittest tests/test\_models/test\_base.py
 - We strongly encourage you to work together on test cases so that you don’t miss any edge case
+
+# Tasks
+
+**0. If it's not tested it doesn't work**
+
+All your files, classes and methods must be unit tested and be PEP 8 validated. 
