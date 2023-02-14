@@ -138,3 +138,13 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def display(self):
+        """
+        display method.prints in stdout the Rectangle
+        instance with the character #
+        """
+        for i in range(self.height):
+            for x in range(self.width):
+                print('#', end='')
+            print()
