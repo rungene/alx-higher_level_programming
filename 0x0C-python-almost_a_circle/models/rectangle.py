@@ -157,6 +157,6 @@ class Rectangle(Base):
         Return:
             The string: [class_name] (id) x/y - width/height
         """
-        return '[{}] {} {}/{} - {}/{}'.format(self.__class__name,
+        return '[{}] {} {}/{} - {}/{}'.format(self.__class__name__,
                                               self.id, self.x, self.y,
                                               self.width, self.height)
