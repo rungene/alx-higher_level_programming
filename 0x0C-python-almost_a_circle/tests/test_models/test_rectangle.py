@@ -130,3 +130,10 @@ class TestRec(unittest.TestCase):
         self.assertEqual(R.area(), 100)
         with self.assertRaises(TypeError):
             A = R.area(1)
+
+    def test_str_mthd(self):
+        """
+        Testing the str method returns the corret formated string
+        """
+        r_string = Rectangle(4, 6, 2, 1, 12)
+        self.assertEqual("[Rectangle] (12) 2/1 - 4/6", str(r_string))
