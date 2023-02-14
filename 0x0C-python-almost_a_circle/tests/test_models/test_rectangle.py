@@ -93,3 +93,12 @@ class TestRec(unittest.TestCase):
             R = Rectangle()
         with self.assertRaises(TypeError):
             R = Rectangle(1, 2, 3, 4, 5, 6, 7)
+
+    def tes_area_method(self):
+        """"
+        Testing the area method with
+        """
+        R = Rectangle(10, 10)
+        self.assertEqual(R.area(), 100)
+        with self.assertRaises(TypeError):
+            A = R.area(1)
