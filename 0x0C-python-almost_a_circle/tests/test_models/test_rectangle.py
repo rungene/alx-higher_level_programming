@@ -94,7 +94,35 @@ class TestRec(unittest.TestCase):
         with self.assertRaises(TypeError):
             R = Rectangle(1, 2, 3, 4, 5, 6, 7)
 
-    def tes_area_method(self):
+    def test_input_types(self):
+        """
+        Testing for different input types
+        Raise exception where necessary
+        """
+        with self.assertRaises(TypeError):
+            R = Rectangle('height', 'width')
+        with self.assertRaises(TypeError):
+            R = Rectangle(1.2, 1.3)
+        with self.assertRaises(TypeError):
+            R = Rectangle(1, 1, 'x', 'y')
+        with self.assertRaises(TypeError):
+            R = Rectangle(1, 2, 2.3, 1.3)
+        with self.assertRaises(TypeError):
+            R = Rectangle(True, False)
+        with self.assertRaises(TypeError):
+            R = Rectangle(1, 2, True, False)
+        with self.assertRaises(TypeError):
+            R = Rectangle([1, 2], 3, 4, 5)
+        with self.assertRaises(TypeError):
+            R = Rectangle((1, 2), 3, 4, 5)
+        with self.assertRaises(TypeError):
+            R = Rectangle((1, 2), 'x', 'y')
+        with self.assertRaises(TypeError):
+            R = Rectangle({1: 1}, 2, 3, 4)
+        with self.assertRaises(TypeError):
+            R = Rectangle({1: 2, 2: 3}, 5, 6)
+
+    def test_area_mthd(self):
         """"
         Testing the area method with
         """
