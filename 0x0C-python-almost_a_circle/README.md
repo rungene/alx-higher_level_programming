@@ -135,3 +135,7 @@ Because we want to protect attributes of our class. With a setter, you are able 
 **4. Area first**
 
 	Update the class Rectangle by adding the public method def area(self): that returns the area value of the Rectangle instance.
+
+**5. Display #0**
+
+	Update the class Rectangle by adding the public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here.
