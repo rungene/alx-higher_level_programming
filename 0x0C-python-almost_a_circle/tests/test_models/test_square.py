@@ -126,10 +126,10 @@ class TestSquare(unittest.TestCase):
         """"
         Testing the area method
         """
-        R = Rectangle(10, 10)
-        self.assertEqual(R.area(), 100)
+        S = Square(10, 10)
+        self.assertEqual(S.area(), 100)
         with self.assertRaises(TypeError):
-            A = R.area(1)
+            A = S.area(1)
 
     def test_str_mthd(self):
         """
