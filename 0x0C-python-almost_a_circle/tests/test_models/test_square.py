@@ -108,7 +108,7 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             S = Square(1, 2, 2.3, 1.3)
         with self.assertRaises(TypeError):
-            S = Rectangle(True, False)
+            S = Square(True, False)
         with self.assertRaises(TypeError):
             S = Square(1, 2, True, False)
         with self.assertRaises(TypeError):
@@ -152,15 +152,15 @@ class TestSquare(unittest.TestCase):
         """
         Testing update method(args).confirming it updates as expected
         """
-        r1 = Rectangle(10, 10, 10, 10)
+        r1 = Square(10, 10, 10, 10)
         r1.update(89)
         self.assertEqual(89, r1.id)
         r1.update(89, 2)
-        self.assertEqual(2, r1.width)
+        self.assertEqual(2, r1.size)
         r1.update(89, 2, 3)
-        self.assertEqual(3, r1.height)
+        self.assertEqual(3, r1.x)
         r1.update(89, 2, 3, 4)
-        self.assertEqual(4, r1.x)
+        self.assertEqual(4, r1.y)
         r1.update(89, 2, 3, 4, 5)
         self.assertEqual(5, r1.y)
 
