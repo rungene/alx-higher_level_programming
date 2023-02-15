@@ -165,12 +165,13 @@ class Rectangle(Base):
                                                 self.id, self.x, self.y,
                                                 self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         update method.assigns an argument to each attribute:
 
         Attribute:
             args(list): list of inputs to update the rectangle class
+            kwargs: dictionary of inputss to update the reclangle class
         """
         if args is not None and len(args) > 0:
             for i, arg in enumerate(args):
@@ -184,3 +185,15 @@ class Rectangle(Base):
                     self.x = arg
                 elif i == 4:
                     self.y = arg
+        elif kwargs is not None and len(kwargs) > 0:
+            for (k, v) in kwargs.items():
+                if k == 'id':
+                    self.id = v
+                elif k == 'width':
+                    self.width = v
+                elif k == 'height':
+                    self.height = v
+                elif k == 'x':
+                    self.x = v
+                elif k == 'y':
+                    self.y = v
