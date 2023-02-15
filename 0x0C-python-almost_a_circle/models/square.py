@@ -14,7 +14,7 @@ class Square(Rectangle):
     Attributes
         - None
     """
-        def __init__(self, size, x=0, y=0, id=None):
+    def __init__(self, size, x=0, y=0, id=None):
         """
         init class constructor for Square
 
@@ -23,3 +23,15 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
         self.size = size
+
+    def __str__(self):
+        """
+        __str__ method that return  a string represenation
+        of an object(class)
+
+        Return:
+            [Square] (<id>) <x>/<y> - <size>(width or height)
+        """
+        return '[{}] ({}) {}/{} - {}/{}'.format(self.__class__.__name__,
+                                                self.id, self.x, self.y,
+                                                self.size)
