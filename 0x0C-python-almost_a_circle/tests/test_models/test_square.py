@@ -66,7 +66,7 @@ class TestSquare(unittest.TestCase):
 
     def test_expected_values(self):
         """
-        Testing expected Normal values just for width and height
+        Testing expected Normal values just for size
         x, y and id
         """
         s0 = Square(1, 2)
@@ -84,15 +84,15 @@ class TestSquare(unittest.TestCase):
         Testing for zero and negative values
         """
         with self.assertRaises(ValueError):
-            R = Rectangle(0, 0)
+            S = Square(0, 0)
         with self.assertRaises(ValueError):
-            R = Rectangle(-1, -1)
+            S = Square(-1, -1)
         with self.assertRaises(ValueError):
-            R = Rectangle(1, 1, -1, -1)
+            S = Square(1, 1, -1, -1)
         with self.assertRaises(TypeError):
-            R = Rectangle()
+            S = Square()
         with self.assertRaises(TypeError):
-            R = Rectangle(1, 2, 3, 4, 5, 6, 7)
+            S = Square(1, 2, 3, 4, 5, 6, 7)
 
     def test_input_types(self):
         """
