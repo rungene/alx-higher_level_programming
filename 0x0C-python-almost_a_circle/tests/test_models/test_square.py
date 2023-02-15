@@ -100,27 +100,27 @@ class TestSquare(unittest.TestCase):
         Raise exception where necessary
         """
         with self.assertRaises(TypeError):
-            R = Rectangle('height', 'width')
+            S = Square('size', 'x')
         with self.assertRaises(TypeError):
-            R = Rectangle(1.2, 1.3)
+            S = Size(1.2, 1.3)
         with self.assertRaises(TypeError):
-            R = Rectangle(1, 1, 'x', 'y')
+            S = Square(1, 'x', 'y')
         with self.assertRaises(TypeError):
-            R = Rectangle(1, 2, 2.3, 1.3)
+            S = Square(1, 2, 2.3, 1.3)
         with self.assertRaises(TypeError):
-            R = Rectangle(True, False)
+            S = Rectangle(True, False)
         with self.assertRaises(TypeError):
-            R = Rectangle(1, 2, True, False)
+            S = Square(1, 2, True, False)
         with self.assertRaises(TypeError):
-            R = Rectangle([1, 2], 3, 4, 5)
+            S = Square([1, 2], 3, 4, 5)
         with self.assertRaises(TypeError):
-            R = Rectangle((1, 2), 3, 4, 5)
+            S = Square((1, 2), 3, 4, 5)
         with self.assertRaises(TypeError):
-            R = Rectangle((1, 2), 'x', 'y')
+            S = Square((1, 2), 'x', 'y')
         with self.assertRaises(TypeError):
-            R = Rectangle({1: 1}, 2, 3, 4)
+            S = Square({1: 1}, 2, 3, 4)
         with self.assertRaises(TypeError):
-            R = Rectangle({1: 2, 2: 3}, 5, 6)
+            S = Square({1: 2, 2: 3}, 5, 6)
 
     def test_area_mthd(self):
         """"
