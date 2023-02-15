@@ -150,3 +150,19 @@ class TestRec(unittest.TestCase):
             R.display()
             out = buffer_io.getvalue()
             self.assertEqual(out, ('#' * 2 + '\n') * 2)
+
+    def test_update_args(self):
+        """
+        Testing update method(args).confirming it updates as expected
+        """
+        r1 = Rectangle(10, 10, 10, 10)
+        r1.update(89)
+        self.assertEqual(89, r1.id)
+        r1.update(89, 2)
+        self.assertEqual(2, r1.width)
+        r1.update(89, 2, 3)
+        self.assertEqual(3, r1.height)
+        r1.update(89, 2, 3, 4)
+        self.assertEqual(4, r1.x)
+        r1.update(89, 2, 3, 4, 5)
+        self.assertEqual(5, r1.y)
