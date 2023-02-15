@@ -142,9 +142,9 @@ class TestSquare(unittest.TestCase):
         """"
         Testing the display method prints as expected
         """
-        R = Rectangle(2, 2, 0, 0, 1)
+        S = Square(2, 0, 0, 1)
         with redirect_stdout(io.StringIO()) as buffer_io:
-            R.display()
+            S.display()
             out = buffer_io.getvalue()
             self.assertEqual(out, ('#' * 2 + '\n') * 2)
 
