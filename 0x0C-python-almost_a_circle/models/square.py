@@ -4,7 +4,7 @@ square.py module
 Created on Wednesday 15.02.2023
 @author: Rungene
 """
-from models.base import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
