@@ -168,14 +168,14 @@ class TestSquare(unittest.TestCase):
         """
         Testing update method(kwargs).confirming it updates as expected
         """
-        r1 = Rectangle(10, 10, 10, 10, 5)
-        r1.update(height=1)
-        self.assertEqual(1, r1.height)
-        r1.update(width=1, x=2)
-        self.assertEqual([1, 2], [r1.width, r1.x])
-        r1.update(y=1, width=2, x=3, id=89)
-        self.assertEqual([1, 2, 3, 89], [r1.y, r1.width, r1.x, r1.id])
-        r1.update(x=1, height=2, y=3, width=4)
-        self.assertEqual([1, 2, 3, 4], [r1.x, r1.height, r1.y, r1.width])
+        r1 = Square(10, 10, 10, 10)
+        r1.update(size=1)
+        self.assertEqual(1, r1.size)
+        r1.update(size=1, x=2)
+        self.assertEqual([1, 2], [r1.size, r1.x])
+        r1.update(y=1, size=2, x=3, id=89)
+        self.assertEqual([1, 2, 3, 89], [r1.y, r1.size, r1.x, r1.id])
+        r1.update(x=1, size=2, y=3)
+        self.assertEqual([1, 2, 3], [r1.x, r1.size, r1.y])
         r1.update(x=9, y=10)
         self.assertEqual([9, 10], [r1.x, r1.y])
