@@ -9,6 +9,9 @@ import unittest
 from models.rectangle import Rectangle
 import inspect
 import pep8
+import sys
+import io
+from contextlib import redirect_stdout
 
 
 class TestRec(unittest.TestCase):
@@ -124,7 +127,7 @@ class TestRec(unittest.TestCase):
 
     def test_area_mthd(self):
         """"
-        Testing the area method with
+        Testing the area method
         """
         R = Rectangle(10, 10)
         self.assertEqual(R.area(), 100)
@@ -137,3 +140,13 @@ class TestRec(unittest.TestCase):
         """
         r_string = Rectangle(4, 6, 2, 1, 12)
         self.assertEqual("[Rectangle] (12) 2/1 - 4/6", str(r_string))
+
+    def test_display1_mthd(self):
+        """"
+        Testing the display method prints as expected
+        """
+        R = Rectangle(2, 2, 0, 0, 1)
+        with io.StringIO() as bufferIO, redirect_stdout(bufferIO):
+            R.display()
+            out = bufferIO.getvalue()
+            self.assertEqual(out, ('#' * 2 + '\n') * 2)
