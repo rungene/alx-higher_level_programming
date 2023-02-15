@@ -146,7 +146,7 @@ class TestRec(unittest.TestCase):
         Testing the display method prints as expected
         """
         R = Rectangle(2, 2, 0, 0, 1)
-        with io.StringIO() as bufferIO, redirect_stdout(bufferIO):
+        with redirect_stdout(io.StringIO()) as buffer_io:
             R.display()
-            out = bufferIO.getvalue()
+            out = buffer_io.getvalue()
             self.assertEqual(out, ('#' * 2 + '\n') * 2)
