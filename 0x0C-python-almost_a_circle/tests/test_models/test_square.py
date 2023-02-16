@@ -156,7 +156,7 @@ class TestSquare(unittest.TestCase):
         r1.update(89)
         self.assertEqual(89, r1.id)
         r1.update(89, 2)
-        self.assertEqual(10, r1.size)
+        self.assertEqual(2, r1.size)
         r1.update(89, 2, 3)
         self.assertEqual(10, r1.x)
         r1.update(89, 2, 3, 4)
