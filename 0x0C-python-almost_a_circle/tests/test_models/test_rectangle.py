@@ -182,3 +182,12 @@ class TestRec(unittest.TestCase):
         self.assertEqual([1, 2, 3, 4], [r1.x, r1.height, r1.y, r1.width])
         r1.update(x=9, y=10)
         self.assertEqual([9, 10], [r1.x, r1.y])
+
+    def test_to_dictionary(self):
+        """
+        Testing to_dictinary method in our Rectangle class
+        """
+        r1 = Rectangle(10, 2, 1, 9, 1)
+        self.assertEqual(r1.to_dictionary(), {'x': 1, 'y': 9,
+                                              'id': 1, 'height': 2,
+                                              'width': 10})
