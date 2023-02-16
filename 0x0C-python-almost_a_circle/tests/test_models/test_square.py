@@ -179,3 +179,11 @@ class TestSquare(unittest.TestCase):
         self.assertEqual([1, 2, 3], [r1.x, r1.size, r1.y])
         r1.update(x=9, y=10)
         self.assertEqual([9, 10], [r1.x, r1.y])
+
+    def test_to_dictionary(self):
+        """
+        Testing to_dictinary method in our Rectangle class
+        """
+        s1 = Square(1, 10, 2, 1)
+        self.assertEqual(s1.to_dictionary(), {'id': 1, 'x': 10,
+                                              'size': 1, 'y': 2})
