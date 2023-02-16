@@ -102,7 +102,7 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             S = Square('size', 'x')
         with self.assertRaises(TypeError):
-            S = Size(1.2, 1.3)
+            S = Square(1.2, 1.3)
         with self.assertRaises(TypeError):
             S = Square(1, 'x', 'y')
         with self.assertRaises(TypeError):
@@ -135,7 +135,7 @@ class TestSquare(unittest.TestCase):
         """
         Testing the str method returns the corret formated string
         """
-        r_string = Rectangle(1, 2, 3, 4)
+        r_string = Square(1, 2, 3, 4)
         self.assertEqual("[Square] (4) 2/3 - 1", str(r_string))
 
     def test_display1_mthd(self):
