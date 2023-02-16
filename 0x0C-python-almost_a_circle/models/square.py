@@ -35,3 +35,27 @@ class Square(Rectangle):
         return '[{}] ({}) {}/{} - {}'.format(self.__class__.__name__,
                                              self.id, self.x, self.y,
                                              self.size)
+
+    @property
+    def size(self):
+        """
+        property method size value
+
+        Returns:
+            private value of size
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+        setter method for size value
+
+        Attribute:
+            value: int value to set
+        """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        self.width = value
