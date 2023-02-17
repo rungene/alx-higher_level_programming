@@ -76,3 +76,21 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        class method create - takes in a dictinary converts to an instance.
+
+        Attribute
+            dictionary - used as **kwargs of the method upda
+
+        Return:
+            returns an instance with all attributes already set:
+        """
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        elif cls.__name__ == "Shape":
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
