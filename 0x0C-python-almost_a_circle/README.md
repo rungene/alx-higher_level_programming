@@ -244,3 +244,10 @@ Update the class Square by adding the public method def update(self, \*args, \*\
 	- You must use the static method to_json_string (created before)
 	- You must overwrite the file if it already exists
 
+**17. JSON string to dictionary**
+
+	Update the class Base by adding the static method def from_json_string(json_string): that returns the list of the JSON string representation json_string:
+
+	- json_string is a string representing a list of dictionaries
+	- If json_string is None or empty, return an empty list
+	- Otherwise, return the list represented by json_string
