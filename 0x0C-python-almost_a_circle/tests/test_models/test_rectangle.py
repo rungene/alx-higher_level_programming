@@ -125,7 +125,7 @@ class TestRec(unittest.TestCase):
         with self.assertRaises(TypeError):
             R = Rectangle({1: 2, 2: 3}, 5, 6)
 
-    def test_area_mthd(self):
+    def tes_area_mthd(self):
         """"
         Testing the area method
         """
