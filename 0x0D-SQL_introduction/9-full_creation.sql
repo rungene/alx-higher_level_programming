@@ -1,9 +1,9 @@
--- create a table using CREATE
--- DDL query to create a table if dose not exists
+-- Create a new table
+-- DDL query to create a new table
 CREATE TABLE IF NOT EXISTS second_table
 (id INT,
 name VARCHAR(256),
-score INT)
+score INT);
 -- DML query to insert first row in table
 INSERT INTO second_table(id,name,score)
 VALUES (1'John',10);
