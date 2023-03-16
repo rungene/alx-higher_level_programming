@@ -464,4 +464,26 @@ guillaume@ubuntu:~/$
 - GitHub repository: alx-higher_level_programming
 - Directory: 0x0D-SQL_introduction
 - File: 12-no_cheating.sql
-	
+
+**13. Score too low**
+
+Write a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+
+- The database name will be passed as an argument of the mysql command
+
+```
+guillaume@ubuntu:~/$ cat 13-change_class.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+guillaume@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+score   name
+10  John
+10  Bob
+8   George
+guillaume@ubuntu:~/$ 
+```
+**Repo:**
+
+- GitHub repository: alx-higher_level_programming
+- Directory: 0x0D-SQL_introduction
+- File: 13-change_class.sql
