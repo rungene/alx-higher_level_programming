@@ -8,3 +8,4 @@ id INT NOT NULL AUTO_INCREMENT UNIQUE,
 name VARCHAR(256) NOT NULL,
 PRIMARY KEY (id)
 );
+Create database and table
