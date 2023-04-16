@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # cursor object
     cursor = db.cursor()
     # sql query to retive all states in tabel starting with 'N'
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'\
                    ORDER BY id ASC")
     # fetch the rows iterate over them and print
     rows = cursor.fetchall()
