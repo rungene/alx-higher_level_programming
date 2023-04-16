@@ -22,9 +22,7 @@ if __name__ == '__main__':
                          passwd=password, db=dbname, port=3306)
     # cursor object
     cursor = db.cursor()
-    # generate a pattern for states name search
-    state_pattern = f'{state_name}%'
-    # sql query to retive all states matching a pattern
+    # sql query matching a pattern for stare name search
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'\
                    ORDER BY id ASC".format(state_name))
     # fetch the rows iterate over them and print
