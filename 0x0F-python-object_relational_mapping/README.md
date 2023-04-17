@@ -433,3 +433,5 @@ guillaume@ubuntu:~/0x0F$
 	- GitHub repository: alx-higher_level_programming
 	- Directory: 0x0F-python-object_relational_mapping
 	- File: 5-filter_cities.py
+
+> 6. First state model 

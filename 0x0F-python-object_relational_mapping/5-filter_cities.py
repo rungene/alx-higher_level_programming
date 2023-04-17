@@ -24,13 +24,19 @@ if __name__ == '__main__':
     cursor = db.cursor()
     # define an sql query with parameter from states name
     query = """SELECT cities.name FROM cities INNER JOIN\
-            states ON cities.state_id = states.id WHERE states.name = %s"""
+            states ON cities.state_id = states.id WHERE\
+            states.name = BINARY %s"""
     # execute the query with the state name parameter
-    cursor.execute(query, (state_name,))
+    num_rows = cursor.execute(query, (state_name,))
     # fetch the rows iterate over them and print
     rows = cursor.fetchall()
+    i = 1
     for row in rows:
-        print(row)
+        print(row[0], end='')
+        if i < num_rows:
+            print(end=', ')
+        i += 1
+        print()
     # close the cursor and db connections
     cursor.close()
     db.close()
