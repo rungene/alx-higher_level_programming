@@ -378,3 +378,7 @@ guillaume@ubuntu:~/0x0F$
 	- GitHub repository: alx-higher_level_programming
 	- Directory: 0x0F-python-object_relational_mapping
 	- File: 4-cities_by_state.py
+
+> 5. All cities by state 
+
+
