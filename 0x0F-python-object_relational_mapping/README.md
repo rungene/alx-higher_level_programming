@@ -435,3 +435,5 @@ guillaume@ubuntu:~/0x0F$
 	- File: 5-filter_cities.py
 
 > 6. First state model 
+
+![You can ignore SQL and trust ORM Magic](/images/images.jpg)
