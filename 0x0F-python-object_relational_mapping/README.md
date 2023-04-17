@@ -436,4 +436,4 @@ guillaume@ubuntu:~/0x0F$
 
 > 6. First state model 
 
-![You can ignore SQL and trust ORM Magic](/images/image.jpg)
+![You can ignore SQL and trust ORM Magic](images/image.jpg)
