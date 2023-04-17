@@ -23,9 +23,10 @@ if __name__ == '__main__':
     # cursor object
     cursor = db.cursor()
     # sql query to retrive all cities and sort results by city id
-    cursor.execute("SELECT cities.id, cities.name, states.name FROM\
-                   cities INNER JOIN states ON cities.states_id =\
-                   states.id ORDER BY cities.id ASC")
+    cursor.execute("SELECT cities.id, cities.name, states.name\
+                    FROM cities INNER JOIN states\
+                    ON cities.states_id=states.id\
+                    ORDER BY cities.id ASC;")
     # fetch the rows iterate over them and print
     rows = cursor.fetchall()
     for row in rows:
