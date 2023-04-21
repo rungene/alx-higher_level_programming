@@ -28,9 +28,10 @@ if __name__ == '__main__':
     session = Session()
 
     # Query the db
-    states_city = session.query(State, City).join(State)\
-                         .order_by(City.id).all()
+    states_city = session.query(State.name, City.id, City.name)\
+                         .join(City, City.state_id == State.id)\
+                         .order_by(City.id)
 
     # Print results
-    for state, city in states_city:
-        print(f'{state.name}: {(city.id)} {city.name}')
+    for state in states_city:
+        print(f'{state[0]}: {(state[1])} {state[2]}')
