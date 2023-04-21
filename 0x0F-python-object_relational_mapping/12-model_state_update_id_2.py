@@ -28,6 +28,6 @@ if __name__ == '__main__':
     session = Session()
 
     # Query State objects from the database sort the results by id
-    states = session.query(State).filter(State.id==2).first()
+    states = session.query(State).filter(State.id == 2).first()
     states.name = "New Mexico"
     session.commit()
