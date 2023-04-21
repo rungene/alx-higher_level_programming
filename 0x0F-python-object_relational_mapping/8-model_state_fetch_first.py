@@ -27,7 +27,7 @@ if __name__ == '__main__':
     session = Session()
 
     # construct the query
-    states = session.query(State).order_by(State.id.asc()).filter_by(id=1)
+    states = session.query(State).order_by(State.id.asc())
 
     # retrive the first result
     result = states.first()
