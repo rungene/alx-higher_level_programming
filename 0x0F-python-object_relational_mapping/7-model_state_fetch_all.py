@@ -31,4 +31,4 @@ if __name__ == '__main__':
 
     # Print results
     for state in states:
-        print(state.id, state.name)
+        print(f'{state.id}: {state.name}')
