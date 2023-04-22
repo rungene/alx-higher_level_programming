@@ -34,4 +34,4 @@ if __name__ == '__main__':
 
     # Print results
     for state in states_city:
-        print(f'{state[0]}: {(state[1])} {state[2]}')
+        print(f'{state[0]}: ({state[1]}) {state[2]}')
