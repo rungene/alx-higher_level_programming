@@ -1,6 +1,6 @@
 const $ = window.$;
 // Select tag DIV#red_header element
-const redHeader = $('#red_header');
+const redHeader = $('DIV#red_header');
 
 // Bind an event handler to the click event of readHeader element
 redHeader.click(function () {
