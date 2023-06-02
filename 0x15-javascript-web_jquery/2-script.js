@@ -3,7 +3,7 @@ const $ = window.$;
 const redHeader = $('#red_header');
 
 // Bind an event handler to the click event of readHeader element
-redHeader.on('click', function () {
+redHeader.click(function () {
   // Get header element
   const header = $('HEADER');
 
