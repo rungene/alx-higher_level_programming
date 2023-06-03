@@ -1,11 +1,7 @@
 const $ = window.$;
-$.ajax({
-  url: 'https://swapi-api.alx-tools.com/api/people/5/?format=json',
-  dataType: 'json',
-  success: function (response) {
-    $('DIV#character').text(response.name);
-  },
-  error: function () {
-    $('DIV#character').text('Error fetching character name');
-  }
+const url = 'https://swapi-api.hbtn.io/api/people/5/?format=json';
+
+$.getJSON(url, function (body) {
+  let name = body.name;
+  $('DIV#character').text(name);
 });
