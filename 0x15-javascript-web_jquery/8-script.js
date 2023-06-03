@@ -1,6 +1,6 @@
 const $ = window.$;
 $.ajax({
-  url: 'https://swapi-api.alx-tools.com/api/people/5/?format=json',
+  url: 'https://swapi-api.alx-tools.com/api/films/?format=json',
   dataType: 'json',
   success: function (response) {
     const movies = response.results;
